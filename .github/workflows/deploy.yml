@@ -34,3 +34,4 @@ jobs:
           run: if docker volume ls --quiet --filter name=FunForFamily_react-volume | grep -q .; then docker volume rm FunForFamily_react-volume; fi
         - name: Run docker compose up
           run: docker compose up --build -d
+          
